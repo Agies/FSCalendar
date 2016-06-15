@@ -205,7 +205,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
     _focusOnSingleSelectedDate = YES;
     _showsPlaceholders = YES;
 // Issue #334:
-    _canSelectPlaceholders = YES;
+    _canSelectPlaceholders = NO;
     
     UIView *contentView = [[UIView alloc] initWithFrame:CGRectZero];
     contentView.backgroundColor = [UIColor clearColor];
