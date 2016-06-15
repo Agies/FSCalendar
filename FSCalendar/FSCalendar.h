@@ -323,6 +323,13 @@ IB_DESIGNABLE
  */
 @property (assign, nonatomic) IBInspectable BOOL showsPlaceholders;
 
+// Issue #334:
+/**
+ * A Boolean value that determines whether the calendar should allow selections of placeholders.
+ * Default is YES.
+ */
+@property (assign, nonatomic) IBInspectable BOOL canSelectPlaceholders;
+
 /**
  * A Boolean value that determines whether the calendar should show a handle for control the scope. Default is NO;
  */
