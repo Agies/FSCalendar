@@ -44,7 +44,7 @@
     calendar.firstWeekday = 2;
     calendar.appearance.caseOptions = FSCalendarCaseOptionsWeekdayUsesSingleUpperCase|FSCalendarCaseOptionsHeaderUsesUpperCase;
 // Issue #334:
-//    calendar.canSelectPlaceholders = NO;
+//    calendar.canSelectPlaceholders = YES;
     [self.view addSubview:calendar];
     self.calendar = calendar;
     

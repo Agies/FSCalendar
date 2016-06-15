@@ -326,7 +326,7 @@ IB_DESIGNABLE
 // Issue #334:
 /**
  * A Boolean value that determines whether the calendar should allow selections of placeholders.
- * Default is YES.
+ * Default is NO.
  */
 @property (assign, nonatomic) IBInspectable BOOL canSelectPlaceholders;
 
