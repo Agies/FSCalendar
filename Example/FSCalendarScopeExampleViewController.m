@@ -17,6 +17,8 @@
     [super viewDidLoad];
     [_calendar selectDate:[NSDate date]];
     
+    _calendar.scopeGesture.enabled = YES;
+    
     // Uncomment this to perform an 'initial-week-scope'
 //    _calendar.scope = FSCalendarScopeWeek;
 }
@@ -33,7 +35,7 @@
     
     NSMutableArray *selectedDates = [NSMutableArray arrayWithCapacity:calendar.selectedDates.count];
     [calendar.selectedDates enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        [selectedDates addObject:[calendar stringFromDate:date format:@"yyyy/MM/dd"]];
+        [selectedDates addObject:[calendar stringFromDate:obj format:@"yyyy/MM/dd"]];
     }];
     NSLog(@"selected dates is %@",selectedDates);
     

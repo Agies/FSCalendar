@@ -13,6 +13,9 @@
 @property (strong, nonatomic) NSCalendar *lunarCalendar;
 @property (strong, nonatomic) NSArray *lunarChars;
 
+@property (strong, nonatomic) NSDate *minimumDate;
+@property (strong, nonatomic) NSDate *maximumDate;
+
 @end
 
 @implementation FullScreenExampleViewController
@@ -42,9 +45,9 @@
     calendar.pagingEnabled = NO; // important
     calendar.allowsMultipleSelection = YES;
     calendar.firstWeekday = 2;
+    calendar.placeholderType = FSCalendarPlaceholderTypeFillHeadTail;
     calendar.appearance.caseOptions = FSCalendarCaseOptionsWeekdayUsesSingleUpperCase|FSCalendarCaseOptionsHeaderUsesUpperCase;
-// Issue #334:
-//    calendar.canSelectPlaceholders = YES;
+    calendar.placeholderType = FSCalendarPlaceholderTypeFillHeadTail;
     [self.view addSubview:calendar];
     self.calendar = calendar;
     
@@ -53,6 +56,20 @@
     UIBarButtonItem *lunarItem = [[UIBarButtonItem alloc] initWithTitle:@"Lunar" style:UIBarButtonItemStyleBordered target:self action:@selector(lunarItemClicked:)];
     [lunarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor magentaColor]} forState:UIControlStateNormal];
     self.navigationItem.rightBarButtonItems = @[lunarItem, todayItem];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.minimumDate = [self.calendar dateWithYear:2016 month:2 day:1];
+    self.maximumDate = [self.calendar dateWithYear:2018 month:4 day:1];
+    /*
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.minimumDate = [self.calendar dateWithYear:2015 month:2 day:1];
+        self.maximumDate = [self.calendar dateWithYear:2015 month:6 day:1];
+        [self.calendar reloadData];
+    });
+    */
 }
 
 - (void)dealloc
@@ -77,17 +94,15 @@
     _calendar.frame = CGRectMake(0, CGRectGetMaxY(self.navigationController.navigationBar.frame), self.view.bounds.size.width, self.view.bounds.size.height-CGRectGetMaxY(self.navigationController.navigationBar.frame));
 }
 
-/*
 - (NSDate *)minimumDateForCalendar:(FSCalendar *)calendar
 {
-    return [NSDate date];
+    return self.minimumDate;
 }
 
 - (NSDate *)maximumDateForCalendar:(FSCalendar *)calendar
 {
-    return [calendar dateByAddingMonths:3 toDate:[NSDate date]];
+    return self.maximumDate;
 }
-*/
 
 - (NSString *)calendar:(FSCalendar *)calendar subtitleForDate:(NSDate *)date
 {

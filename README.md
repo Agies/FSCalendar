@@ -1,24 +1,28 @@
 
-![fscalendar](https://cloud.githubusercontent.com/assets/5186464/6655324/213a814a-cb36-11e4-9add-f80515a83291.png)<br/><br/>
+![logo](https://cloud.githubusercontent.com/assets/5186464/16540124/efc51f72-408b-11e6-934a-4e750b8b55bb.png)
+<br/><br/>
 [![Travis](https://travis-ci.org/WenchaoD/FSCalendar.svg?branch=master)](https://travis-ci.org/WenchaoD/FSCalendar)
 [![Version](https://img.shields.io/cocoapods/v/FSCalendar.svg?style=flat)](http://cocoadocs.org/docsets/FSCalendar)
 [![Platform](https://img.shields.io/badge/platform-iOS%207%2B-blue.svg?style=flat)](http://cocoadocs.org/docsets/FSCalendar)
 [![Swift2 compatible](https://img.shields.io/badge/swift2-compatible-4BC51D.svg?style=flat)](https://developer.apple.com/swift/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![License](https://img.shields.io/cocoapods/l/FSCalendar.svg?style=flat)](http://cocoadocs.org/docsets/FSCalendar)
-[![Join the chat at https://gitter.im/WenchaoD/FSCalendar](https://badges.gitter.im/WenchaoD/FSCalendar.svg)](https://gitter.im/WenchaoD/FSCalendar?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 * 在您静静的离开之前，请确保点击了这个按钮<img style="margin-bottom:-12px"" width="72" alt="star" src="https://cloud.githubusercontent.com/assets/5186464/15383105/fcf9cdf0-1dc2-11e6-88db-bf221042a584.png"><br>
 * Before leaving quietly, please make sure you've taken good care of this button.<img style="margin-bottom:-12px"" width="72" alt="star" src="https://cloud.githubusercontent.com/assets/5186464/15383105/fcf9cdf0-1dc2-11e6-88db-bf221042a584.png"> 
 
+> 欢迎加入QQ群: 323861692
+
 
 # [中文介绍](http://www.jianshu.com/notebooks/4276521/latest)
+
 
 # Table of contents
 * [Screenshots](#screenshots)
 * [Installation](#installation)
 * [Advanced usage](#advanced_usage)
 * [Support me](#support)
+* [Contact](#contact)
 
 # <a id="screenshots"></a>Screenshots
 
@@ -34,8 +38,8 @@
 ## Hide placeholder dates
 ![fscalendar-showsplaceholder](https://cloud.githubusercontent.com/assets/5186464/13727902/21a90042-e940-11e5-9b9f-392f38cf007d.gif)
 
-## Scope handle
-![scopehandle](https://cloud.githubusercontent.com/assets/5186464/15096674/5270ef9c-1536-11e6-88b0-c4e3e8f93115.gif)
+## Scope gesture
+![scopegesture](https://cloud.githubusercontent.com/assets/5186464/16909556/276fa8a8-4d06-11e6-8092-587952edb395.gif)
 
 > FSCalendar doesn't change frame or the constraint by itself, see [Adjusts frame dynamicly](#adjusts_frame_dynamicly)
 
@@ -162,14 +166,21 @@ self.calendar = calendar
 <a href="https://cloud.githubusercontent.com/assets/5186464/15096872/b06f3a3a-153c-11e6-89f9-2e9c7b88ef42.png" target="_blank"><img src="http://a4.mzstatic.com/us/r30/Purple49/v4/23/31/14/233114f8-2e8d-7b63-8dc5-85d29893061e/icon175x175.jpeg" height="150" width="150" style="margin-left:15px;-webkit-border-radius: 20px;border:1px solid rgba(43, 177, 0, 1)"></a>
 </div>
 
+
+# Communications
+* If you found a bug ***with certain steps to reproduce***, open an issue.
+* If you need help about your code, use [stackoverflow](http://stackoverflow.com/questions/tagged/fscalendar) and tag `fscalendar`
+* If you want to contribute, submit a pull request. Make sure to follow [Coding Guidelines for Cocoa](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
+
+#<a id='contact'/></a> Contact
+* 微博： [**@WenchaoD**](http://weibo.com/WenchaoD)
+* Twitter：[**@WenchaoD**](https://twitter.com/WenchaoD)
+* QQ群：323861692
+
+> If your made a beautiful calendar with this library in your app, please take a screen shot and [@me](https://twitter.com/WenchaoD) in twitter. Your help really means a lot to me! <br/>
+> 如果你用这个库完成了一个外观漂亮的日历，希望你能将这个漂亮的日历截图在微博中[@我](http://weibo.com/WenchaoD)，十分感谢！
+
+
 # License
 FSCalendar is available under the MIT license. See the LICENSE file for more info.
 
-# Contributions
-* Issues and pull requests are absolutely welcome.
-* For code contributions, please follow [Coding Guidelines for Cocoa](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
-
-# Author
-* Email: `f33chobits@gmail.com`
-* Twitter: `https://twitter.com/WenchaoD`
-* 微博: `http://www.weibo.com/u/2231723463`

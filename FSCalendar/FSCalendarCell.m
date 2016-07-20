@@ -81,9 +81,9 @@
     CGFloat diameter = MIN(self.bounds.size.height*5.0/6.0,self.bounds.size.width);
     diameter = diameter > FSCalendarStandardCellDiameter ? (diameter - (diameter-FSCalendarStandardCellDiameter)*0.5) : diameter;
     _shapeLayer.frame = CGRectMake((self.bounds.size.width-diameter)/2,
-                                        (titleHeight-diameter)/2,
-                                        diameter,
-                                        diameter);
+                                   (titleHeight-diameter)/2,
+                                   diameter,
+                                   diameter);
     _shapeLayer.borderWidth = 1.0;
     _shapeLayer.borderColor = [UIColor clearColor].CGColor;
     
@@ -101,6 +101,8 @@
 - (void)prepareForReuse
 {
     [super prepareForReuse];
+    _month = nil;
+    _date = nil;
     [CATransaction setDisableActions:YES];
     _shapeLayer.hidden = YES;
     [self.contentView.layer removeAnimationForKey:@"opacity"];
@@ -137,10 +139,32 @@
 
 - (void)configureCell
 {
-    self.contentView.hidden = self.dateIsPlaceholder && !self.calendar.showsPlaceholders;
-    if (self.contentView.hidden) {
-        return;
+    if (self.dateIsPlaceholder) {
+        if (self.calendar.placeholderType == FSCalendarPlaceholderTypeNone) {
+            self.contentView.hidden = YES;
+        } else if (self.calendar.placeholderType == FSCalendarPlaceholderTypeFillHeadTail && self.calendar.scope == FSCalendarScopeMonth && !self.calendar.floatingMode) {
+            
+            NSIndexPath *indexPath = [self.calendar.collectionView indexPathForCell:self];
+            
+            NSInteger lineCount = [self.calendar numberOfRowsInMonth:self.month];
+            if (lineCount == 6) {
+                self.contentView.hidden = NO;
+            } else {
+                NSInteger currentLine = 0;
+                if (self.calendar.collectionViewLayout.scrollDirection == UICollectionViewScrollDirectionVertical) {
+                    currentLine = indexPath.item/7 + 1;
+                } else {
+                    currentLine = indexPath.item%6 + 1;
+                }
+                self.contentView.hidden = (currentLine>lineCount);
+            }
+        }
+    } else {
+        self.contentView.hidden = NO;
     }
+    
+    if (self.contentView.hidden) return;
+    
     _titleLabel.text = self.title ?: [NSString stringWithFormat:@"%@",@([_calendar dayOfDate:_date])];
     if (_subtitle) {
         _subtitleLabel.text = _subtitle;
@@ -158,7 +182,7 @@
         if (_subtitle) {
             CGFloat titleHeight = [@"1" sizeWithAttributes:@{NSFontAttributeName:_titleLabel.font}].height;
             CGFloat subtitleHeight = [@"1" sizeWithAttributes:@{NSFontAttributeName:_subtitleLabel.font}].height;
-
+            
             CGFloat height = titleHeight + subtitleHeight;
             _titleLabel.frame = CGRectMake(0,
                                            (self.contentView.fs_height*5.0/6.0-height)*0.5+_appearance.titleVerticalOffset,
@@ -190,7 +214,7 @@
     
     UIColor *borderColor = self.colorForCellBorder;
     UIColor *fillColor = self.colorForCellFill;
-
+    
     BOOL shouldHideShapeLayer = !self.selected && !self.dateIsToday && !self.dateIsSelected && !borderColor && !fillColor;
     
     if (_shapeLayer.hidden != shouldHideShapeLayer) {
@@ -205,14 +229,14 @@
             _shapeLayer.path = path;
         }
         
-        CGColorRef fillColor = self.colorForCellFill.CGColor;
-        if (!CGColorEqualToColor(_shapeLayer.fillColor, fillColor)) {
-            _shapeLayer.fillColor = fillColor;
+        CGColorRef cellFillColor = self.colorForCellFill.CGColor;
+        if (!CGColorEqualToColor(_shapeLayer.fillColor, cellFillColor)) {
+            _shapeLayer.fillColor = cellFillColor;
         }
         
-        CGColorRef borderColor = self.colorForCellBorder.CGColor;
-        if (!CGColorEqualToColor(_shapeLayer.strokeColor, borderColor)) {
-            _shapeLayer.strokeColor = borderColor;
+        CGColorRef cellBorderColor = self.colorForCellBorder.CGColor;
+        if (!CGColorEqualToColor(_shapeLayer.strokeColor, cellBorderColor)) {
+            _shapeLayer.strokeColor = cellBorderColor;
         }
         
     }
