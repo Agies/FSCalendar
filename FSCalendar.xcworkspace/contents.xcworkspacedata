@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:FSCalendar/../Example/Example.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FSCalendar/../SwiftExample/SwiftExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FSCalendar/FSCalendar.xcodeproj">
+   </FileRef>
+</Workspace>

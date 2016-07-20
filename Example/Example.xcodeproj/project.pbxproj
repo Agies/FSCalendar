@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3D7F6171D3FE2AE00D3D5F0 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D7F6141D3FE29300D3D5F0 /* FSCalendar.framework */; };
+		C3D7F6181D3FE2AE00D3D5F0 /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3D7F6141D3FE29300D3D5F0 /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3D7F61E1D3FE96C00D3D5F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F5641D3FDE4E00D3D5F0 /* AppDelegate.m */; };
+		C3D7F61F1D3FE98A00D3D5F0 /* CalendarIdentifierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F56F1D3FDF2E00D3D5F0 /* CalendarIdentifierViewController.m */; };
+		C3D7F6201D3FE98E00D3D5F0 /* DelegateAppearanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F5721D3FDF2E00D3D5F0 /* DelegateAppearanceViewController.m */; };
+		C3D7F6211D3FE99200D3D5F0 /* FSCalendarScopeExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F5751D3FDF2E00D3D5F0 /* FSCalendarScopeExampleViewController.m */; };
+		C3D7F6221D3FE99700D3D5F0 /* FullScreenExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F5781D3FDF2E00D3D5F0 /* FullScreenExampleViewController.m */; };
+		C3D7F6231D3FE99B00D3D5F0 /* HidePlaceholderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F57B1D3FDF2E00D3D5F0 /* HidePlaceholderViewController.m */; };
+		C3D7F6241D3FE9A000D3D5F0 /* LoadViewExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F57E1D3FDF2E00D3D5F0 /* LoadViewExampleViewController.m */; };
+		C3D7F6251D3FE9A400D3D5F0 /* MultipleSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F5811D3FDF2E00D3D5F0 /* MultipleSelectionViewController.m */; };
+		C3D7F6261D3FE9A800D3D5F0 /* ButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F5841D3FDF2E00D3D5F0 /* ButtonsViewController.m */; };
+		C3D7F6271D3FE9AE00D3D5F0 /* ScopeHandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F5871D3FDF2E00D3D5F0 /* ScopeHandleViewController.m */; };
+		C3D7F6281D3FE9B800D3D5F0 /* CalendarConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F58A1D3FDF2E00D3D5F0 /* CalendarConfigViewController.m */; };
+		C3D7F6291D3FE9B800D3D5F0 /* StoryboardExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F58C1D3FDF2E00D3D5F0 /* StoryboardExampleViewController.m */; };
+		C3D7F62A1D3FEA0900D3D5F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7F5A71D3FDF5000D3D5F0 /* main.m */; };
+		C3F763D61D3FEB5200BD4E80 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D7F5BA1D3FDFC300D3D5F0 /* Main_iPad.storyboard */; };
+		C3F763D81D3FEB5500BD4E80 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D7F5BC1D3FDFC300D3D5F0 /* Main_iPhone.storyboard */; };
+		C3F763D91D3FEBDA00BD4E80 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D7F5A31D3FDF3D00D3D5F0 /* Images.xcassets */; };
+		EE638CD41B89DBE90006DD1A /* FSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE638CD21B89DBE90006DD1A /* FSTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3D7F6131D3FE29300D3D5F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3D7F60E1D3FE29300D3D5F0 /* FSCalendar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C3D7F5491D3FDA2600D3D5F0;
+			remoteInfo = FSCalendar;
+		};
+		C3D7F6151D3FE29300D3D5F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3D7F60E1D3FE29300D3D5F0 /* FSCalendar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C3D7F5531D3FDA2600D3D5F0;
+			remoteInfo = FSCalendarTests;
+		};
+		C3D7F6191D3FE2AE00D3D5F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3D7F60E1D3FE29300D3D5F0 /* FSCalendar.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C3D7F5481D3FDA2600D3D5F0;
+			remoteInfo = FSCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3D7F61B1D3FE2AE00D3D5F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C3D7F6181D3FE2AE00D3D5F0 /* FSCalendar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C3D7F5631D3FDE4E00D3D5F0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3D7F5641D3FDE4E00D3D5F0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3D7F56E1D3FDF2E00D3D5F0 /* CalendarIdentifierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarIdentifierViewController.h; sourceTree = "<group>"; };
+		C3D7F56F1D3FDF2E00D3D5F0 /* CalendarIdentifierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarIdentifierViewController.m; sourceTree = "<group>"; };
+		C3D7F5711D3FDF2E00D3D5F0 /* DelegateAppearanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateAppearanceViewController.h; sourceTree = "<group>"; };
+		C3D7F5721D3FDF2E00D3D5F0 /* DelegateAppearanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateAppearanceViewController.m; sourceTree = "<group>"; };
+		C3D7F5741D3FDF2E00D3D5F0 /* FSCalendarScopeExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarScopeExampleViewController.h; sourceTree = "<group>"; };
+		C3D7F5751D3FDF2E00D3D5F0 /* FSCalendarScopeExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarScopeExampleViewController.m; sourceTree = "<group>"; };
+		C3D7F5771D3FDF2E00D3D5F0 /* FullScreenExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreenExampleViewController.h; sourceTree = "<group>"; };
+		C3D7F5781D3FDF2E00D3D5F0 /* FullScreenExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullScreenExampleViewController.m; sourceTree = "<group>"; };
+		C3D7F57A1D3FDF2E00D3D5F0 /* HidePlaceholderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HidePlaceholderViewController.h; sourceTree = "<group>"; };
+		C3D7F57B1D3FDF2E00D3D5F0 /* HidePlaceholderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HidePlaceholderViewController.m; sourceTree = "<group>"; };
+		C3D7F57D1D3FDF2E00D3D5F0 /* LoadViewExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadViewExampleViewController.h; sourceTree = "<group>"; };
+		C3D7F57E1D3FDF2E00D3D5F0 /* LoadViewExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadViewExampleViewController.m; sourceTree = "<group>"; };
+		C3D7F5801D3FDF2E00D3D5F0 /* MultipleSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleSelectionViewController.h; sourceTree = "<group>"; };
+		C3D7F5811D3FDF2E00D3D5F0 /* MultipleSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleSelectionViewController.m; sourceTree = "<group>"; };
+		C3D7F5831D3FDF2E00D3D5F0 /* ButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonsViewController.h; sourceTree = "<group>"; };
+		C3D7F5841D3FDF2E00D3D5F0 /* ButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonsViewController.m; sourceTree = "<group>"; };
+		C3D7F5861D3FDF2E00D3D5F0 /* ScopeHandleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScopeHandleViewController.h; sourceTree = "<group>"; };
+		C3D7F5871D3FDF2E00D3D5F0 /* ScopeHandleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScopeHandleViewController.m; sourceTree = "<group>"; };
+		C3D7F5891D3FDF2E00D3D5F0 /* CalendarConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarConfigViewController.h; sourceTree = "<group>"; };
+		C3D7F58A1D3FDF2E00D3D5F0 /* CalendarConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarConfigViewController.m; sourceTree = "<group>"; };
+		C3D7F58B1D3FDF2E00D3D5F0 /* StoryboardExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardExampleViewController.h; sourceTree = "<group>"; };
+		C3D7F58C1D3FDF2E00D3D5F0 /* StoryboardExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardExampleViewController.m; sourceTree = "<group>"; };
+		C3D7F5A31D3FDF3D00D3D5F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3D7F5A61D3FDF5000D3D5F0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D7F5A71D3FDF5000D3D5F0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3D7F5BB1D3FDFC300D3D5F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		C3D7F5BD1D3FDFC300D3D5F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C3D7F60E1D3FE29300D3D5F0 /* FSCalendar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSCalendar.xcodeproj; path = ../FSCalendar/FSCalendar.xcodeproj; sourceTree = "<group>"; };
+		EE0D7FC71B89C5D3003C287B /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE638CD11B89DBE90006DD1A /* FSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSTableViewController.h; path = Example/FSTableViewController.h; sourceTree = SOURCE_ROOT; };
+		EE638CD21B89DBE90006DD1A /* FSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSTableViewController.m; path = Example/FSTableViewController.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE0D7FC41B89C5D3003C287B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D7F6171D3FE2AE00D3D5F0 /* FSCalendar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3D7F56D1D3FDF2E00D3D5F0 /* Calendar Identifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F56E1D3FDF2E00D3D5F0 /* CalendarIdentifierViewController.h */,
+				C3D7F56F1D3FDF2E00D3D5F0 /* CalendarIdentifierViewController.m */,
+			);
+			path = "Calendar Identifiers";
+			sourceTree = "<group>";
+		};
+		C3D7F5701D3FDF2E00D3D5F0 /* Delegate Appearence */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F5711D3FDF2E00D3D5F0 /* DelegateAppearanceViewController.h */,
+				C3D7F5721D3FDF2E00D3D5F0 /* DelegateAppearanceViewController.m */,
+			);
+			path = "Delegate Appearence";
+			sourceTree = "<group>";
+		};
+		C3D7F5731D3FDF2E00D3D5F0 /* FSCalendarScope Example */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F5741D3FDF2E00D3D5F0 /* FSCalendarScopeExampleViewController.h */,
+				C3D7F5751D3FDF2E00D3D5F0 /* FSCalendarScopeExampleViewController.m */,
+			);
+			path = "FSCalendarScope Example";
+			sourceTree = "<group>";
+		};
+		C3D7F5761D3FDF2E00D3D5F0 /* Fullscreen Example */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F5771D3FDF2E00D3D5F0 /* FullScreenExampleViewController.h */,
+				C3D7F5781D3FDF2E00D3D5F0 /* FullScreenExampleViewController.m */,
+			);
+			path = "Fullscreen Example";
+			sourceTree = "<group>";
+		};
+		C3D7F5791D3FDF2E00D3D5F0 /* Hide Placeholders */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F57A1D3FDF2E00D3D5F0 /* HidePlaceholderViewController.h */,
+				C3D7F57B1D3FDF2E00D3D5F0 /* HidePlaceholderViewController.m */,
+			);
+			path = "Hide Placeholders";
+			sourceTree = "<group>";
+		};
+		C3D7F57C1D3FDF2E00D3D5F0 /* LoadView Example */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F57D1D3FDF2E00D3D5F0 /* LoadViewExampleViewController.h */,
+				C3D7F57E1D3FDF2E00D3D5F0 /* LoadViewExampleViewController.m */,
+			);
+			path = "LoadView Example";
+			sourceTree = "<group>";
+		};
+		C3D7F57F1D3FDF2E00D3D5F0 /* MultipleSelection Example */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F5801D3FDF2E00D3D5F0 /* MultipleSelectionViewController.h */,
+				C3D7F5811D3FDF2E00D3D5F0 /* MultipleSelectionViewController.m */,
+			);
+			path = "MultipleSelection Example";
+			sourceTree = "<group>";
+		};
+		C3D7F5821D3FDF2E00D3D5F0 /* Prev-Next-Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F5831D3FDF2E00D3D5F0 /* ButtonsViewController.h */,
+				C3D7F5841D3FDF2E00D3D5F0 /* ButtonsViewController.m */,
+			);
+			path = "Prev-Next-Buttons";
+			sourceTree = "<group>";
+		};
+		C3D7F5851D3FDF2E00D3D5F0 /* Scope handle */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F5861D3FDF2E00D3D5F0 /* ScopeHandleViewController.h */,
+				C3D7F5871D3FDF2E00D3D5F0 /* ScopeHandleViewController.m */,
+			);
+			path = "Scope handle";
+			sourceTree = "<group>";
+		};
+		C3D7F5881D3FDF2E00D3D5F0 /* Storyboard Example */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F5891D3FDF2E00D3D5F0 /* CalendarConfigViewController.h */,
+				C3D7F58A1D3FDF2E00D3D5F0 /* CalendarConfigViewController.m */,
+				C3D7F58B1D3FDF2E00D3D5F0 /* StoryboardExampleViewController.h */,
+				C3D7F58C1D3FDF2E00D3D5F0 /* StoryboardExampleViewController.m */,
+			);
+			path = "Storyboard Example";
+			sourceTree = "<group>";
+		};
+		C3D7F5A51D3FDF5000D3D5F0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F5A61D3FDF5000D3D5F0 /* Info.plist */,
+				C3D7F5A71D3FDF5000D3D5F0 /* main.m */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		C3D7F60D1D3FE28A00D3D5F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F60E1D3FE29300D3D5F0 /* FSCalendar.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3D7F60F1D3FE29300D3D5F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F6141D3FE29300D3D5F0 /* FSCalendar.framework */,
+				C3D7F6161D3FE29300D3D5F0 /* FSCalendarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE0D7FBE1B89C5D3003C287B = {
+			isa = PBXGroup;
+			children = (
+				EE0D7FC91B89C5D3003C287B /* Example */,
+				C3D7F60D1D3FE28A00D3D5F0 /* Frameworks */,
+				EE0D7FC81B89C5D3003C287B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE0D7FC81B89C5D3003C287B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE0D7FC71B89C5D3003C287B /* Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE0D7FC91B89C5D3003C287B /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7F5BA1D3FDFC300D3D5F0 /* Main_iPad.storyboard */,
+				C3D7F5BC1D3FDFC300D3D5F0 /* Main_iPhone.storyboard */,
+				C3D7F5631D3FDE4E00D3D5F0 /* AppDelegate.h */,
+				C3D7F5641D3FDE4E00D3D5F0 /* AppDelegate.m */,
+				EE638CD11B89DBE90006DD1A /* FSTableViewController.h */,
+				EE638CD21B89DBE90006DD1A /* FSTableViewController.m */,
+				C3D7F56D1D3FDF2E00D3D5F0 /* Calendar Identifiers */,
+				C3D7F5701D3FDF2E00D3D5F0 /* Delegate Appearence */,
+				C3D7F5731D3FDF2E00D3D5F0 /* FSCalendarScope Example */,
+				C3D7F5761D3FDF2E00D3D5F0 /* Fullscreen Example */,
+				C3D7F5791D3FDF2E00D3D5F0 /* Hide Placeholders */,
+				C3D7F57C1D3FDF2E00D3D5F0 /* LoadView Example */,
+				C3D7F57F1D3FDF2E00D3D5F0 /* MultipleSelection Example */,
+				C3D7F5821D3FDF2E00D3D5F0 /* Prev-Next-Buttons */,
+				C3D7F5851D3FDF2E00D3D5F0 /* Scope handle */,
+				C3D7F5881D3FDF2E00D3D5F0 /* Storyboard Example */,
+				C3D7F5A31D3FDF3D00D3D5F0 /* Images.xcassets */,
+				C3D7F5A51D3FDF5000D3D5F0 /* Support Files */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE0D7FC61B89C5D3003C287B /* ExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0D7FEA1B89C5D3003C287B /* Build configuration list for PBXNativeTarget "ExampleApp" */;
+			buildPhases = (
+				EE0D7FC31B89C5D3003C287B /* Sources */,
+				EE0D7FC41B89C5D3003C287B /* Frameworks */,
+				EE0D7FC51B89C5D3003C287B /* Resources */,
+				C3D7F61B1D3FE2AE00D3D5F0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3D7F61A1D3FE2AE00D3D5F0 /* PBXTargetDependency */,
+			);
+			name = ExampleApp;
+			productName = FSCalendar;
+			productReference = EE0D7FC71B89C5D3003C287B /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE0D7FBF1B89C5D3003C287B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = wenchaoios;
+				TargetAttributes = {
+					EE0D7FC61B89C5D3003C287B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = EE0D7FC21B89C5D3003C287B /* Build configuration list for PBXProject "Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = EE0D7FBE1B89C5D3003C287B;
+			productRefGroup = EE0D7FC81B89C5D3003C287B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C3D7F60F1D3FE29300D3D5F0 /* Products */;
+					ProjectRef = C3D7F60E1D3FE29300D3D5F0 /* FSCalendar.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EE0D7FC61B89C5D3003C287B /* ExampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C3D7F6141D3FE29300D3D5F0 /* FSCalendar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FSCalendar.framework;
+			remoteRef = C3D7F6131D3FE29300D3D5F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C3D7F6161D3FE29300D3D5F0 /* FSCalendarTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FSCalendarTests.xctest;
+			remoteRef = C3D7F6151D3FE29300D3D5F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE0D7FC51B89C5D3003C287B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F763D61D3FEB5200BD4E80 /* Main_iPad.storyboard in Resources */,
+				C3F763D81D3FEB5500BD4E80 /* Main_iPhone.storyboard in Resources */,
+				C3F763D91D3FEBDA00BD4E80 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE0D7FC31B89C5D3003C287B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D7F62A1D3FEA0900D3D5F0 /* main.m in Sources */,
+				EE638CD41B89DBE90006DD1A /* FSTableViewController.m in Sources */,
+				C3D7F61E1D3FE96C00D3D5F0 /* AppDelegate.m in Sources */,
+				C3D7F61F1D3FE98A00D3D5F0 /* CalendarIdentifierViewController.m in Sources */,
+				C3D7F6201D3FE98E00D3D5F0 /* DelegateAppearanceViewController.m in Sources */,
+				C3D7F6211D3FE99200D3D5F0 /* FSCalendarScopeExampleViewController.m in Sources */,
+				C3D7F6221D3FE99700D3D5F0 /* FullScreenExampleViewController.m in Sources */,
+				C3D7F6231D3FE99B00D3D5F0 /* HidePlaceholderViewController.m in Sources */,
+				C3D7F6241D3FE9A000D3D5F0 /* LoadViewExampleViewController.m in Sources */,
+				C3D7F6251D3FE9A400D3D5F0 /* MultipleSelectionViewController.m in Sources */,
+				C3D7F6261D3FE9A800D3D5F0 /* ButtonsViewController.m in Sources */,
+				C3D7F6271D3FE9AE00D3D5F0 /* ScopeHandleViewController.m in Sources */,
+				C3D7F6281D3FE9B800D3D5F0 /* CalendarConfigViewController.m in Sources */,
+				C3D7F6291D3FE9B800D3D5F0 /* StoryboardExampleViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3D7F61A1D3FE2AE00D3D5F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSCalendar;
+			targetProxy = C3D7F6191D3FE2AE00D3D5F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3D7F5BA1D3FDFC300D3D5F0 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3D7F5BB1D3FDFC300D3D5F0 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C3D7F5BC1D3FDFC300D3D5F0 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3D7F5BD1D3FDFC300D3D5F0 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE0D7FE81B89C5D3003C287B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE0D7FE91B89C5D3003C287B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE0D7FEB1B89C5D3003C287B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenchao.FSCalendarExample;
+				PRODUCT_NAME = Example;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE0D7FEC1B89C5D3003C287B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenchao.FSCalendarExample;
+				PRODUCT_NAME = Example;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE0D7FC21B89C5D3003C287B /* Build configuration list for PBXProject "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0D7FE81B89C5D3003C287B /* Debug */,
+				EE0D7FE91B89C5D3003C287B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0D7FEA1B89C5D3003C287B /* Build configuration list for PBXNativeTarget "ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0D7FEB1B89C5D3003C287B /* Debug */,
+				EE0D7FEC1B89C5D3003C287B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE0D7FBF1B89C5D3003C287B /* Project object */;
+}
